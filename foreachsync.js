@@ -28,6 +28,7 @@ Array.prototype.forEach = async function (cb) {
 
 // async arrow function being called
 (async () => {
+    // this is the awaited function(lol)
     await array.forEachSync(async (e, index) => {
         await srw(`${index}->${e}`)
     })
